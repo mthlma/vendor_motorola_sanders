@@ -13,7 +13,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/lib/motorola.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_SYSTEM)/lib/motorola.hardware.camera.provider@2.4.so \
     vendor/motorola/sanders/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/motorola/sanders/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
+    vendor/motorola/sanders/proprietary/lib64/libdtvhal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdtvhal.so \
+    vendor/motorola/sanders/proprietary/lib64/libdtvtuner.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdtvtuner.so \
     vendor/motorola/sanders/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/motorola/sanders/proprietary/etc/permissions/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/mot_dtv_permissions.xml \
+    vendor/motorola/sanders/proprietary/etc/permissions/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.hardware.dtv.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -781,6 +785,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
     vendor/motorola/sanders/proprietary/lib/modules/isdbt.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/isdbt.ko \
+    vendor/motorola/sanders/proprietary/lib/libdtvhal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdtvhal.so \
+    vendor/motorola/sanders/proprietary/lib/libdtvtuner.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdtvtuner.so \
     vendor/motorola/sanders/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
     vendor/motorola/sanders/proprietary/vendor/lib/sensors.rp.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.rp.so \
     vendor/motorola/sanders/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
@@ -1065,4 +1071,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     android.hardware.gnss@2.1-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
-    vendor.qti.gnss@4.0-service
+    vendor.qti.gnss@4.0-service \
+    DTVPlayer \
+    DTVService
